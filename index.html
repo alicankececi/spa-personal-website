@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Site Logo"
+          class="nav__logo"
+          id="logo"
+          designer="Alican"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Get My CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Hi! My name is
+          <!-- Green highlight effect -->
+          <span class="highlight">Alican</span>
+          <br />
+          <span class="highlight">Welcome</span>
+        </h1>
+
+        <button class="btn--text btn--scroll-to">
+          Learn more about me! &DownArrow;
+        </button>
+        <img src="img/hero.png" class="header__img" alt="Minimalist" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About Me</h2>
+        <h3 class="section__header">Software Engineer</h3>
+      </div>
+
+      <div class="aboutme">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="aboutme__img lazy-img"
+        />
+        <div class="aboutme__feature">
+          <div class="aboutme__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-codepen"></use>
+            </svg>
+          </div>
+          <h5 class="aboutme__header">Web Technologies</h5>
+          <p>
+            Enthusiastic about web development. Solution-driven developer adept
+            at contributing to highly collaborative work environment and finding
+            solutions.
+          </p>
+        </div>
+
+        <div class="aboutme__feature">
+          <div class="aboutme__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-info"></use>
+            </svg>
+          </div>
+          <h5 class="aboutme__header">Skills</h5>
+          <p>
+            JavaScript Node.js <br />
+            Express.js MongoDB <br />
+            HTML/CSS Python <br />
+            Java Shell Scripting
+          </p>
+        </div>
+        <img
+          src="img/coding-lazy.png"
+          data-src="img/coding.png"
+          alt="Coding"
+          class="aboutme__img lazy-img"
+        />
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Experience</h2>
+        <h3 class="section__header"></h3>
+      </div>
+
+      <div class="experience">
+        <div class="experience__tab-container">
+          <button class="btn experience__tab experience__tab--1" data-tab="1">
+            <span>01</span>Nokia
+          </button>
+          <button class="btn experience__tab experience__tab--2" data-tab="2">
+            <span>02</span>Netas
+          </button>
+        </div>
+        <div
+          class="experience__content experience__content--1 experience__content--active"
+        >
+          <img src="img/nokia-logo.png" />
+          <h5 class="experience__header">
+            Network Management Solutions Developer
+          </h5>
+          <p>
+            Developing software solutions which automate network processes,
+            management of services and resources.
+          </p>
+        </div>
+
+        <div class="experience__content experience__content--2">
+          <p>Half-Time Internship</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--educations">
+        <h2 class="section__description">Education</h2>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="education">
+            <h5 class="education__header">
+              BS. Electrical & Electronics Engineering
+            </h5>
+            <blockquote class="education__text">
+              <h4><span class="highlight">University</span></h4>
+              <h4>Bahcesehir University</h4>
+            </blockquote>
+            <address class="education__author">
+              <img src="img/istanbul.jpg" alt="" class="education__photo" />
+              <h6 class="education__name">Location</h6>
+              <p class="education__location">Istanbul, TURKEY</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="education">
+            <h5 class="education__header">MS. Wireless Communication</h5>
+            <blockquote class="education__text">
+              <h4><span class="highlight">University</span></h4>
+              <h4>Universitat Pompeu Fabra</h4>
+            </blockquote>
+            <address class="education__author">
+              <img src="img/barcelona.jpg" alt="" class="education__photo" />
+              <h6 class="education__name">Location</h6>
+              <p class="education__location">Barcelona, SPAIN</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">Thanks for visiting!</h3>
+      </div>
+      <button class="btn btn--show-modal">Check My CV</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Github</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Linkedin</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a class="footer__link twitter-link" target="_blank" href=""
+          >Alican Kececi</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Please enter your email <br />
+        <span class="highlight cheers">Cheers!</span>
+      </h2>
+      <form class="modal__form">
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn send">send!</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
